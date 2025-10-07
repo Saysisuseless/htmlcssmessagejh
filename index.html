@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY TEACHERS DAY</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        scrollbar-width: none;
+        overflow: hidden;
+      }
+
+      body {
+        background: #3636d9;
+      }
+
+      .name{
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      #cake {
+        display: block;
+        position: relative;
+        margin: -10em auto 0 auto;
+      }
+
+      /* ============================================== Candle
+      */
+
+      .cake {
+        background: #ffffff;
+        border-radius: 10px;
+        position: absolute;
+        top: 228px;
+        left: 50%;
+        margin-left: -2.4px;
+        margin-top: -8.33333333px;
+        width: 5px;
+        height: 35px;
+        transform: translateY(-300px);
+        backface-visibility: hidden;
+        animation: in 500ms 6s ease-out forwards;
+      }
+      .cake:after,
+      .cake:before {
+        background: rgba(255, 0, 0, 0.4);
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2.22222222px;
+      }
+      .cake:after {
+        top: 25%;
+        left: 0;
+      }
+      .cake:before {
+        top: 45%;
+        left: 0;
+      }
+
+      /* ============================================== Fire
+      */
+
+      .fuego {
+        border-radius: 100%;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -2.6px;
+        width: 6.66666667px;
+        height: 18px;
+      }
+      .fuego:nth-child(1) {
+        animation: fuego 2s 6.5s infinite;
+      }
+      .fuego:nth-child(2) {
+        animation: fuego 1.5s 6.5s infinite;
+      }
+      .fuego:nth-child(3) {
+        animation: fuego 1s 6.5s infinite;
+      }
+      .fuego:nth-child(4) {
+        animation: fuego 0.5s 6.5s infinite;
+      }
+      .fuego:nth-child(5) {
+        animation: fuego 0.2s 6.5s infinite;
+      }
+
+      /* ============================================== Animation Fire
+      */
+
+      @keyframes fuego {
+        0%, 100% {
+          background: rgba(254, 248, 97, 0.5);
+          box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          background: rgba(255, 50, 0, 0.1);
+          box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+          transform: translateY(-20px) scale(0);
+        }
+      }
+
+      @keyframes in {
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .text {
+        color: #260226;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-style:italic;
+        text-align: center;
+        h1 {
+          font-size: 1.4em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    div {
+      font-size: 2.5em;
+      color: #333;
+    }
+  </style>
+</head>
+
+
+  <script>
+    function shootConfetti() {
+      confetti({
+        particleCount: 30,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+
+      confetti({
+        particleCount: 30,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+
+      confetti({
+        particleCount: 25,
+        angle: 90,
+        spread: 60,
+        origin: { x: Math.random(), y: 0 }
+      });
+
+      confetti({
+        particleCount: 25,
+        angle: 270,
+        spread: 60,
+        origin: { x: Math.random(), y: 1 }
+      });
+    }
+
+    setInterval(shootConfetti, 800);
+  </script>
+</body>
+      <div class="text">
+      <h1>HAPPY TEACHERS DAY SIR JHAY AR!!!!</h1>
+      <p class="name">From Leishlyn Lucero</p>
+      </div>
+
+<head>
+
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-content: center;
+      overflow: hidden;
+    }
+
+    .gallery {
+      width: 220px;
+      display: grid;
+      place-items: center;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border: 10px solid #f2f2f2;
+      box-shadow: 0 0 10px #0005;
+      border-radius: 15px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .gallery {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://lh3.google.com/u/0/d/1JUYhGyWrN7a0kMLHEKmwlTtNugiz4biU=w811-h633-iv1?auditContext=prefetch" alt="Floating Photo">
+  </div>
+</body>
+
+  </body>
+</html>
